@@ -60,7 +60,8 @@ Os arquivos necessários para a preparação do ambiente estarão disponíveis n
 
 1- Instalação do JDK (Caso não tenha)
 Visite o link que fornecemos para baixar o JDK. No site, selecionamos a versão OpenJDK 11 LTS e JVM Hotspot. Clique em Download e aguarde até que o arquivo seja baixado. 
-Após o download, execute o arquivo. Os termos do software aparecerão, clique em "Aceitar termos de licença do produto". Nas configurações personalizadas, você deve selecionar "JDK with Hotspot" e, em seguida, selecionar "Enterir feature will be installed on local hard drive". Todos os recursos serão instalados e todas as variáveis de ambiente serão configuradas. Clique em Avançar para concluir a instalação do arquivo.
+Após o download, execute o arquivo. Os termos do software aparecerão, clique em "Aceitar termos de licença do produto". Nas configurações personalizadas, você deve selecionar 
+"JDK with Hotspot" e, em seguida, selecionar "Enterir feature will be installed on local hard drive". Todos os recursos serão instalados e todas as variáveis de ambiente serão configuradas. Clique em Avançar para concluir a instalação do arquivo.
 
 
 2- Instalação da IDE Eclipse (Caso não tenha)
