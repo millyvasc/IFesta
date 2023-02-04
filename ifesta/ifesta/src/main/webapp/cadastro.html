@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/IF_Logo.ico" type="image/x-icon" />
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="main">
+        <div class="left">
+            <h1>IFESTA<br>Cadastre-se agora mesmo</h1>
+            <img src="imagens/festa.svg" class="left-image" alt="Festa animação">
+        </div>
+        <div class="right">
+            <form name="formUsuario" action="insert">
+                <div class="card-cadastro">
+                    <h1>CADASTRO</h1>
+                    <div class="textfield">
+                        <label for="matricula">Matrícula</label>
+                        <input type="text" name="matricula" placeholder="Matrícula">
+                    </div>
+                    <div class="textfield">
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" placeholder="Nome">
+                    </div>
+                    <div class="textfield">
+                        <label for="telefone">Telefone</label>
+                        <input type="text" name="telefone" placeholder="Telefone">
+                    </div>
+                    <div class="textfield">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" placeholder="Email">
+                    </div>
+                    <div class="textfield">
+                        <label for="senha">Senha</label>
+                        <input type="password" name="senha" placeholder="Senha">
+                    </div>
+                    <input type="button" value="Cadastrar" class="botao-principal" onclick="validar()">
+                    <a href="login.jsp">
+                        <input type="button" value="Já tenho uma conta" class="botao-secundario">
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="scripts/validador.js"></script>
+</body>
+</html>

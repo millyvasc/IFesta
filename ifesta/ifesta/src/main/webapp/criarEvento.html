@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Evento</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="imagens/IF_Logo.ico" type="image/x-icon" />
+</head>
+<body>
+    <div class="page-Evento">
+        <div class="caixa-Evento">
+            <form name="formEvento" action="insertEvento">
+                <div class="card-evento">
+                    <h1>EVENTO</h1>
+                    <div class="textfield">
+                        <label for="nome">Nome</label> <input type="text" name="nome" placeholder="Nome">
+                    </div>
+                    <div class="textfield">
+                        <label for="descricao">Descrição</label> <input type="text" name="descricao" placeholder="Descrição">
+                    </div>
+                    <div class="textfield">
+                        <label for="data">Data</label> <input type="date" name="data" placeholder="Data">
+                    </div>
+                    <div class="textfield">
+                        <label for="horario">Horário</label> <input type="time" name="horario" placeholder="Horário">
+                    </div>
+                    <div class="textfield">
+                        <label for="lugar">Lugar</label> <input type="text" name="lugar" placeholder="Lugar">
+                    </div>
+                    <div class="textfield">
+                        <label for="tipo">Tipo de Evento</label>
+                        <select id="tipo" name="tipo" onchange="updateField()">
+                            <option value="default">Tipo de Evento</option>
+                            <option value="Evento Acadêmico">Evento Acadêmico</option>
+                            <option value="Evento Cultural">Evento Cultural</option>
+                            <option value="Evento Social">Evento Social</option>
+                        </select>
+                    </div>
+                    <div class="textfield" id="escolha" >
+                        <label for="outroAtributo" id="valor"></label>
+                        <input type="text" name="outroAtributo" placeholder="">
+                    </div>
+                    <input type="button" value="Criar" class="botao-principal" onclick="validar()">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="scripts/validadorEvento.js"></script>
+</body>
+</html>

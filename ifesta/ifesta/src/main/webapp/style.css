@@ -1,0 +1,616 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	background-color: #514869;
+	display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+html {
+    height: 100%;
+    min-height: 100%;
+}
+
+.logo {
+    font-size: 27px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: bold;
+    color: #fff;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #23232e;
+    height: 10vh;
+    overflow: hidden;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.nav-list ul li {
+    display: inline;
+}
+
+.nav-list {
+    color: rgb(6, 4, 4);
+    text-decoration: none;
+    padding: 20px;
+    margin: 0px;
+    transition: background .3s;
+    font-weight: bold;
+    align-items: center;
+}
+
+.botao {
+    background: #00ff88;
+    color: #fff;
+    border: 1px solid #0dc871;
+    border-radius: 50px;
+    margin-left: 200px;
+    font-weight: bold;
+}
+
+.botao:hover {
+    background: #3ecf8c;
+    color: #fff;
+    border: 1px solid #0dc871;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+.botao {
+    height: 45px;
+    width: 100px;
+}
+
+footer {
+    margin-top: auto;
+}
+
+.rodape {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding-top: 20px;
+    padding-bottom: 35px;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background: #201b2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left>h1 {
+    font-size: 3vw;
+    color: #77ffc0;
+}
+
+.left-image {
+    width: 32vw;
+}
+
+.right {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.card-login>h1 {
+    color: #00ff88;
+    font-weight: 800;
+    margin: 0;
+}
+
+.card-cadastro {
+    width: 550px;
+   	display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px 35px;
+    background: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.card-cadastro>h1 {
+    color: #00ff88;
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.textfield>input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline-color: none;
+    box-sizing: border-box;
+}
+
+.textfield>label {
+    color: #f0ffffde;
+    margin-bottom: 10px;
+}
+
+.textfield>input:placeholder {
+    color: #f0ffff94;
+}
+
+.textfield>select {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 15px;
+    background: #514869;
+    color: #f7f0ffde;
+    font-size: 12pt;
+    outline-color: none;
+    box-sizing: border-box;
+}
+
+.botao-principal {
+    width: 100%;
+    padding: 12px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #2b134b;
+    background: #00ff88;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+}
+
+.botao-secundario {
+    background: none;
+    width: 100%;
+    padding: 0px;
+    margin: 0;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-weight: 700;
+    color: #f0ffffde;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 950px) {
+    .card-login {
+        width: 85%
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main-login {
+        flex-direction: column;
+    }
+
+    .left-login>h1 {
+        display: none;
+    }
+
+    .left-login {
+        width: 100%;
+        height: auto;
+    }
+
+    .right-login {
+        width: 100%;
+        height: auto;
+    }
+
+    .left-login-image {
+        width: 50vw;
+        margin-bottom: 10px;
+    }
+
+    .card-login {
+        width: 90%;
+    }
+}
+#escolha{
+	display: none;
+}
+
+#escolha input{
+	margin-top: 5px;
+}
+
+#background {
+    background: url(imagens/b.jpeg) no-repeat center center;
+    height: 92vh;
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+    background-size: cover;
+    background-attachment: scroll;
+    margin-bottom: 0px;
+}
+
+#background p {
+    margin-top: 10px;
+    color: #fff;
+    margin-left: 50px;
+    font-size: 25px;
+}
+
+#background h3 {
+    padding-top: 35vh;
+    color: #fff;
+    font-size: 7pc;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 50px;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+.cardEventos {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 60vh;
+    margin: 0;
+}
+
+.card {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 2px 23px #26395338;
+    width: 400px;
+    margin: 15px;
+}
+
+.mediaCard {
+    height: 80%;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.mediaCard img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.title {
+    margin-top: 25px;
+    color: #2b3d59;
+    margin-bottom: 10px;
+}
+
+.secondText {
+    color: #828fa1;
+    margin-right: 23px;
+    display: flex;
+    margin-top: 5px;
+}
+
+.bottomText {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 12px;
+    margin-right: 12px;
+    color: #445b73;
+}
+
+.topCard {
+    padding: 20px;
+    padding-top: 0px;
+}
+
+.bottomCard {
+    padding: 20px;
+}
+
+.actions {
+	background-color: #00ff88;
+    border-radius: 10px;
+    width: 70%;
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 6px;
+    margin-left: 13px;
+    margin-right: 10px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40px;
+    border-color: lavender;
+}
+
+.botaoAcao {
+    float: right;
+    margin-top: 10px;
+}
+
+.bt_lembrete{
+	display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.superior {
+    padding-top: 20vh;
+    padding-bottom: 15vh;
+    color: rgb(255, 255, 255);
+    font-size: 2.3pc;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    text-shadow: 1px 1px 25px rgb(83, 74, 74);
+}
+
+.actions-superior {
+    background: none;
+    border: none;
+    color: purple;
+    margin-top: -10px;
+    margin-left: 7px;
+    margin-right: 13px;
+    cursor: pointer;
+    float: right;
+}
+
+.perfil {
+    margin-top: 7.5pc;
+    margin-bottom: 5pc;
+    border-radius: 30px;
+    background-color: #22183f;
+    height: 80%;
+    width: auto;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.perfil-superior {
+    display: inline-block;
+    width: 100%;
+}
+
+.foto {
+    float: left;
+}
+
+.infos {
+    margin-top: 50px;
+    float: left;
+    margin-left: 80px;
+    color: #fff;
+}
+
+.infos h1 {
+    text-align: end;
+    font-size: 50px;
+    margin-bottom: 53px;
+    padding-left: 50px;
+}
+
+.infos h2 {
+    display: flex;
+    margin-top: 30px;
+}
+
+.foto img {
+    margin-top: 60px;
+    margin-left: 100px;
+    border-radius: 20%;
+   	width: 350px;
+    height: 350px;
+}
+
+.perfil-inferior {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.botaoEditarPerfil {
+    background: #00ff88;
+    width: 450px;
+    color: #fff;
+    font-size: 27px;
+    border: 1px solid #0dc871;
+    border-radius: 8px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    height: 50px;
+    cursor: pointer;
+    float: left;
+    margin-left: 100px;
+}
+
+.botaoExcluirPerfil {
+    background: #ff4a4a;
+    width: 450px;
+    color: #fff;
+    font-size: 27px;
+    border: 1px solid #e80000;
+    border-radius: 8px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    height: 50px;
+    cursor: pointer;
+    float: right;
+    margin-right: 100px;
+}
+
+.botaoAddEvento {
+    background: rgb(128, 128, 192);
+    color: #fff;
+    border: 1px solid rgb(128, 0, 255);
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 23px;
+    justify-content: center;
+    height: 45px;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.botaoAddEvento:hover {
+    background: rgb(128, 128, 192);
+    color: #fff;
+    border: 1px solid rgb(128, 0, 255);
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.page-Evento {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 25%;
+    width: 50%;
+    border-radius: 30px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-evento {
+    width: 40pc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px 35px;
+    background: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.card-evento>h1 {
+    color: #00ff88;
+    font-weight: 800;
+    margin: 0;
+}
+
+.page-Evento h1 {
+    padding-top: 30px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.caixa-Evento {
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao-principal2 {
+    width: 90%;
+    padding: 12px 0px;
+    margin: 5%;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #2b134b;
+    background: #00ff88;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+}
