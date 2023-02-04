@@ -7,7 +7,8 @@ Josué da Silva Bispo Alves
 
 
 -> Descrição do sistema
-O IFesta é um sistema desenvolvido para a criação e divulgação de eventos no IFBaiano, estimulando assim a participação dos alunos, que muitas vezes não possuem conhecimento sobre esses eventos. A ideia é tornar o processo mais simples e fácil do que o processo atual.
+O IFesta é um sistema desenvolvido para a criação e divulgação de eventos no IFBaiano, estimulando assim a participação dos alunos, que muitas vezes não possuem
+conhecimento sobre esses eventos. A ideia é tornar o processo mais simples e fácil do que o processo atual.
 Para utilizar o sistema deve-se, primeiramente, realizar o cadastro inserindo informações como matricula, nome, telefone, email e senha. 
 Após o cadastro e login, o usuário terá acesso ao sistema onde poderá visualizar seu perfil, editar informações ou deletar sua conta.
 O sistema permitirá que os usuários criem eventos por meio de postagens simples contendo informações como nome, tipo, data, horário etc.  
